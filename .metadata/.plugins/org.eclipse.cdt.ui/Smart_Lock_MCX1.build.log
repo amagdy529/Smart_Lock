@@ -1,0 +1,6 @@
+20:39:49 **** Clean-only build of configuration Debug for project Smart_Lock_MCX1 ****
+make clean 
+make: *** No rule to make target `clean'.  Stop.
+
+20:39:49 Build Finished (took 187ms)
+

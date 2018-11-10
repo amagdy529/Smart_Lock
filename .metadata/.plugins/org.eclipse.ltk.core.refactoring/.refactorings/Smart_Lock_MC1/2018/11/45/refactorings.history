@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Smart_Lock_MC1/lcd.c&apos; to &apos;lcd-.c&apos;" description="Rename resource &apos;lcd.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lcd.c" name="lcd-.c" stamp="1541785943707" updateReferences="true"/>
+</session>

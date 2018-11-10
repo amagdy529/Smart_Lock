@@ -1,0 +1,68 @@
+/*
+ * password_driver.c
+ *
+ *
+ *      Author: MagdyA4
+ */
+
+/*******************************************************************************
+ *                      Functions Prototypes(Private)                          *
+ *******************************************************************************/
+
+
+
+
+
+/*******************************************************************************
+ *                      Functions Definitions                                  *
+ *******************************************************************************/
+
+
+
+/*
+ * function to store passsword in array
+ * parameters : arr, arr_size
+ * return: void
+ *
+ */
+void store_password_in_arr(uint8 arr[],uint8 arr_size){
+	uint8 i;
+	uint8 key;
+	for(i=0;i<(arr_size-1);i++){
+		_delay_ms(500); /* Press time */
+		/* if any switch pressed for more than 500 ms it counts more than one press */
+		key = KeyPad_getPressedKey(); /* get the pressed key number */
+		if((key <= 9) && (key >= 0))
+		{
+			arr[i] = key ;
+			LCD_intgerToString(key); /* display the pressed keypad switch */
+		}
+		else
+		{
+			i -= 1;
+		}
+		LCD_displayCharacter('*'); /* display the pressed keypad switch */
+	}
+	arr[arr_size] = '#';
+}
+
+
+
+/*
+ * function to compare passwords
+ * parameters : arr1 , arr2 , arr_size
+ * return: flag 1 if compare not equeal and 0 if equal
+ *
+ */
+uint8 compare_passwords(uint8 arr1[], uint8 arr2[] ,uint8 arr_size){
+	uint8 i;
+	uint8 compare_fail_flag = 0;
+	for(i=0;i<arr_size;i++){
+		if(arr1[i] != arr2[i]){
+			compare_fail_flag = 1;
+			return compare_fail_flag;
+		}
+	}
+	return compare_fail_flag;
+}
+

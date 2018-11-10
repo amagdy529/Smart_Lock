@@ -1,0 +1,20 @@
+22:29:51 **** Incremental Build of configuration Debug for project Smart_Lock_MC1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Smart_Lock_MC1.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    9354 bytes (57.1% Full)
+(.text + .data + .bootloader)
+
+Data:         34 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:29:51 Build Finished (took 430ms)
+

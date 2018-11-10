@@ -1,0 +1,26 @@
+/*
+ * password_driver.h
+ *
+ *
+ *      Author: MagdyA4
+ */
+
+#ifndef PASSWORD_DRIVER_H_
+#define PASSWORD_DRIVER_H_
+
+#include "std_types.h"
+#include "micro_config.h"
+#include "common_macros.h"
+
+/*******************************************************************************
+ *                      Preprocessor Macros                                    *
+ *******************************************************************************/
+
+
+/*******************************************************************************
+ *                      Functions Prototypes                                   *
+ *******************************************************************************/
+
+void stoer_password_in_arr(uint8 arr[],uint8 arr_size);
+
+#endif /* PASSWORD_DRIVER_H_ */

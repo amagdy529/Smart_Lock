@@ -1,0 +1,35 @@
+/*
+ * password_driver.c
+ *
+ *
+ *      Author: MagdyA4
+ */
+
+/*******************************************************************************
+ *                      Functions Prototypes(Private)                          *
+ *******************************************************************************/
+
+/*******************************************************************************
+ *                      Functions Definitions                                  *
+ *******************************************************************************/
+
+void store_password_in_arr(uint8 arr[],uint8 arr_size){
+	uint8 i;
+	uint8 key;
+	for(i=0;i<(arr_size-1);i++){
+		arr[i]=KeyPad_getPressedKey();
+	}
+	arr[arr_size] = '#';
+}
+uint8 compare_passwords(uint8 arr1[], uint8 arr2[] ,uint8 arr_size){
+	uint8 i;
+	uint8 compare_fail_flag = 0;
+	for(i=0;i<arr_size;i++){
+		if(arr1[i] != arr2[i]){
+			compare_fail_flag = 1;
+			break;
+		}
+	}
+	reutrn compare_fail_flag;
+}
+

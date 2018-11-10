@@ -1,0 +1,20 @@
+/*
+ * password_driver.h
+ *
+ *
+ *      Author: MagdyA4
+ */
+
+#ifndef PASSWORD_DRIVER_H_
+#define PASSWORD_DRIVER_H_
+
+#include "std_types.h"
+#include "micro_config.h"
+#include "common_macros.h"
+
+/*******************************************************************************
+ *                      Preprocessor Macros                                    *
+ *******************************************************************************/
+
+
+#endif /* PASSWORD_DRIVER_H_ */

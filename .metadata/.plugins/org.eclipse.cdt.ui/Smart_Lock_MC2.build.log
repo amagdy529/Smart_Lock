@@ -1,0 +1,38 @@
+22:29:51 **** Incremental Build of configuration Debug for project Smart_Lock_MC2 ****
+make all 
+Building file: ../smart_lock_MC2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"smart_lock_MC2.d" -MT"smart_lock_MC2.o" -c -o "smart_lock_MC2.o" "../smart_lock_MC2.c"
+In file included from ../micro_config.h:22,
+                 from ../uart.h:11,
+                 from ../smart_lock_MC2.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../smart_lock_MC2.c
+ 
+Building target: Smart_Lock_MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_Lock_MC2.map -mmcu=atmega16 -o "Smart_Lock_MC2.elf"  ./external_eeprom.o ./i2c.o ./motor.o ./smart_lock_MC2.o ./uart.o   
+Finished building target: Smart_Lock_MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_Lock_MC2.elf  >"Smart_Lock_MC2.lss"
+Finished building: Smart_Lock_MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 Smart_Lock_MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1570 bytes (9.6% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:29:53 Build Finished (took 1s.302ms)
+

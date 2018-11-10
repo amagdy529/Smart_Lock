@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Smart_Lock_MC1/smart_lock_MC1&apos; to &apos;smart_lock_MC1.c&apos;" description="Rename resource &apos;smart_lock_MC1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="smart_lock_MC1" name="smart_lock_MC1.c" stamp="1540137434163" updateReferences="true"/>
+</session>

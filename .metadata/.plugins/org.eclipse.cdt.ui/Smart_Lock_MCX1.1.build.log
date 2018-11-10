@@ -1,0 +1,31 @@
+22:29:53 **** Incremental Build of configuration Debug for project Smart_Lock_MCX1.1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 libSmart_Lock_MCX1.1.a
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:      25 bytes (0.2% Full)
+(.text + .data + .bootloader)
+
+Data:         25 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:       0 bytes (0.0% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:29:53 Build Finished (took 303ms)
+
